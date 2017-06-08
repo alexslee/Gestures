@@ -17,6 +17,7 @@
 		4379C9241EE9E56A00FA7127 /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4379C9231EE9E56A00FA7127 /* PinchViewController.m */; };
 		4379C9271EE9EC3600FA7127 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4379C9261EE9EC3600FA7127 /* SwipeViewController.m */; };
 		4379C92A1EE9F22300FA7127 /* RotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4379C9291EE9F22300FA7127 /* RotationViewController.m */; };
+		4379C92D1EE9F50D00FA7127 /* EdgePanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4379C92C1EE9F50D00FA7127 /* EdgePanViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		4379C9261EE9EC3600FA7127 /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
 		4379C9281EE9F22300FA7127 /* RotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationViewController.h; sourceTree = "<group>"; };
 		4379C9291EE9F22300FA7127 /* RotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationViewController.m; sourceTree = "<group>"; };
+		4379C92B1EE9F50D00FA7127 /* EdgePanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgePanViewController.h; sourceTree = "<group>"; };
+		4379C92C1EE9F50D00FA7127 /* EdgePanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgePanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				4379C9261EE9EC3600FA7127 /* SwipeViewController.m */,
 				4379C9281EE9F22300FA7127 /* RotationViewController.h */,
 				4379C9291EE9F22300FA7127 /* RotationViewController.m */,
+				4379C92B1EE9F50D00FA7127 /* EdgePanViewController.h */,
+				4379C92C1EE9F50D00FA7127 /* EdgePanViewController.m */,
 				4379C9021EE9D67300FA7127 /* Main.storyboard */,
 				4379C8F91EE9D67300FA7127 /* Supporting Files */,
 			);
@@ -175,6 +180,7 @@
 				4379C9241EE9E56A00FA7127 /* PinchViewController.m in Sources */,
 				4379C92A1EE9F22300FA7127 /* RotationViewController.m in Sources */,
 				4379C9271EE9EC3600FA7127 /* SwipeViewController.m in Sources */,
+				4379C92D1EE9F50D00FA7127 /* EdgePanViewController.m in Sources */,
 				4379C9211EE9E18900FA7127 /* TapViewController.m in Sources */,
 				4379C8FB1EE9D67300FA7127 /* main.m in Sources */,
 			);

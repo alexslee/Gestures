@@ -24,6 +24,7 @@
                         <segue destination="hy8-xd-kld" kind="relationship" relationship="viewControllers" id="ZHy-nC-f8j"/>
                         <segue destination="gqI-Xa-JGk" kind="relationship" relationship="viewControllers" id="Jml-Dx-yHh"/>
                         <segue destination="k6m-lI-0Lv" kind="relationship" relationship="viewControllers" id="WTX-6m-d4L"/>
+                        <segue destination="52S-He-bGg" kind="relationship" relationship="viewControllers" id="0K2-bB-gGd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Esn-wR-yA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,6 +142,25 @@
             </objects>
             <point key="canvasLocation" x="-1114" y="2119"/>
         </scene>
+        <!--Edge-->
+        <scene sceneID="6dC-aL-l6p">
+            <objects>
+                <viewController id="52S-He-bGg" customClass="EdgePanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dvK-2u-lhH"/>
+                        <viewControllerLayoutGuide type="bottom" id="vde-2Y-rwq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DJT-2z-3Wy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Edge" image="item6" id="gKE-s9-gEU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v0g-zw-LWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1111" y="2859"/>
+        </scene>
     </scenes>
     <resources>
         <image name="item1" width="30" height="30"/>
@@ -148,5 +168,6 @@
         <image name="item3" width="30" height="28"/>
         <image name="item4" width="30" height="30"/>
         <image name="item5" width="30" height="30"/>
+        <image name="item6" width="30" height="30"/>
     </resources>
 </document>
