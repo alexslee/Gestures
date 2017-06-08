@@ -23,6 +23,7 @@
                         <segue destination="tqc-nK-YfR" kind="relationship" relationship="viewControllers" id="GWf-wZ-HgC"/>
                         <segue destination="hy8-xd-kld" kind="relationship" relationship="viewControllers" id="ZHy-nC-f8j"/>
                         <segue destination="gqI-Xa-JGk" kind="relationship" relationship="viewControllers" id="Jml-Dx-yHh"/>
+                        <segue destination="k6m-lI-0Lv" kind="relationship" relationship="viewControllers" id="WTX-6m-d4L"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Esn-wR-yA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -121,11 +122,31 @@
             </objects>
             <point key="canvasLocation" x="-1113" y="1387"/>
         </scene>
+        <!--Rotation-->
+        <scene sceneID="QOT-Yd-Ze9">
+            <objects>
+                <viewController id="k6m-lI-0Lv" customClass="RotationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dVH-OE-PYL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mdu-jH-xsI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="35B-cV-ZRY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rotation" image="item5" id="bMh-X4-M2l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7h-oN-Vg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1114" y="2119"/>
+        </scene>
     </scenes>
     <resources>
         <image name="item1" width="30" height="30"/>
         <image name="item2" width="30" height="28"/>
         <image name="item3" width="30" height="28"/>
         <image name="item4" width="30" height="30"/>
+        <image name="item5" width="30" height="30"/>
     </resources>
 </document>
