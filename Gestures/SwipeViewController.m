@@ -36,6 +36,7 @@
     whiteView.backgroundColor = [UIColor whiteColor];
     
     [brownView addSubview:whiteView];
+    [brownView bringSubviewToFront:whiteView];
     
     UISwipeGestureRecognizer *swipeLeftGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeHandle:)];
     
@@ -44,10 +45,8 @@
     swipeLeftGesture.direction = UISwipeGestureRecognizerDirectionLeft;
     swipeRightGesture.direction = UISwipeGestureRecognizerDirectionRight;
     
-    [brownView addGestureRecognizer:swipeLeftGesture];
-    [brownView addGestureRecognizer:swipeRightGesture];
-    
-    [brownView bringSubviewToFront:whiteView];
+    [whiteView addGestureRecognizer:swipeLeftGesture];
+    [whiteView addGestureRecognizer:swipeRightGesture];
     
 }
 
