@@ -15,6 +15,7 @@
 		4379C91E1EE9E16F00FA7127 /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4379C91D1EE9E16F00FA7127 /* PanViewController.m */; };
 		4379C9211EE9E18900FA7127 /* TapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4379C9201EE9E18900FA7127 /* TapViewController.m */; };
 		4379C9241EE9E56A00FA7127 /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4379C9231EE9E56A00FA7127 /* PinchViewController.m */; };
+		4379C9271EE9EC3600FA7127 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4379C9261EE9EC3600FA7127 /* SwipeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		4379C9201EE9E18900FA7127 /* TapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapViewController.m; sourceTree = "<group>"; };
 		4379C9221EE9E56A00FA7127 /* PinchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchViewController.h; sourceTree = "<group>"; };
 		4379C9231EE9E56A00FA7127 /* PinchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
+		4379C9251EE9EC3600FA7127 /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
+		4379C9261EE9EC3600FA7127 /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				4379C9231EE9E56A00FA7127 /* PinchViewController.m */,
 				4379C9021EE9D67300FA7127 /* Main.storyboard */,
 				4379C8F91EE9D67300FA7127 /* Supporting Files */,
+				4379C9251EE9EC3600FA7127 /* SwipeViewController.h */,
+				4379C9261EE9EC3600FA7127 /* SwipeViewController.m */,
 			);
 			path = Gestures;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				4379C91E1EE9E16F00FA7127 /* PanViewController.m in Sources */,
 				4379C8FE1EE9D67300FA7127 /* AppDelegate.m in Sources */,
 				4379C9241EE9E56A00FA7127 /* PinchViewController.m in Sources */,
+				4379C9271EE9EC3600FA7127 /* SwipeViewController.m in Sources */,
 				4379C9211EE9E18900FA7127 /* TapViewController.m in Sources */,
 				4379C8FB1EE9D67300FA7127 /* main.m in Sources */,
 			);
