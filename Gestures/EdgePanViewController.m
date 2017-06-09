@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    CGFloat width = self.view.bounds.size.width / 3 * 2;
+    CGFloat width = self.view.bounds.size.width;
     CGFloat height = self.view.bounds.size.height / 2;
     CGRect frame = CGRectMake(self.view.frame.size.width - 10, CGRectGetMidY(self.view.bounds) - height/2, width, height);
     
@@ -48,7 +48,7 @@
 - (void)edgePanHandle:(UIScreenEdgePanGestureRecognizer *)sender;
 {
     if (!self.visible) {
-        if(sender.view.frame.origin.x <= self.view.frame.size.width * 0.66) {
+        if(sender.view.frame.origin.x >= self.view.frame.size.width * 0.70) {
             CGPoint translation = [sender translationInView:self.view];
             CGPoint oldCenter = sender.view.center;
             CGPoint newCenter = CGPointMake(oldCenter.x + translation.x,oldCenter.y);
@@ -57,13 +57,18 @@
             [sender setTranslation:CGPointZero inView:self.view];
             
         } else {
-//            NSLog(@"nah over here");
+            
             self.panGesture.enabled = YES;
             self.edgeGesture.enabled = NO;
             self.visible = YES;
             CGRect frame = sender.view.frame;
             frame.origin.x = CGRectGetMidX(self.view.frame);
-            sender.view.frame = frame;
+            [UIView animateWithDuration:0.1
+                                  delay:0.0
+                                options:0
+                             animations:^(void){sender.view.frame = frame;}
+                             completion:nil];
+            
         }
     }
 }
@@ -71,17 +76,19 @@
 - (void)panhandler:(UIPanGestureRecognizer *)sender;
 {
     if (self.visible) {
-        if (sender.view.frame.origin.x >= self.view.frame.size.width * 0.75) {
-//            NSLog(@"why over here");
+        if (sender.view.frame.origin.x >= self.view.frame.size.width * 0.70) {
             CGFloat height = sender.view.frame.size.height;
             CGFloat width = sender.view.frame.size.width;
             CGRect frame = CGRectMake(self.view.frame.size.width - 10, CGRectGetMidY(self.view.bounds) - height/2, width, height);
-            frame.origin.x = self.view.frame.size.width-10;
+            [UIView animateWithDuration:0.1
+                                  delay:0.0
+                                options:0
+                             animations:^(void){sender.view.frame = frame;}
+                             completion:nil];
             self.panGesture.enabled = NO;
             self.edgeGesture.enabled = YES;
             self.visible = NO;
         } else {
-//            NSLog(@"why tho over here");
             CGPoint translation = [sender translationInView:self.view];
             CGPoint oldCenter = sender.view.center;
             CGPoint newCenter = CGPointMake(oldCenter.x + translation.x,oldCenter.y);
